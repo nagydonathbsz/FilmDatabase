@@ -61,7 +61,7 @@ namespace FilmDatabase
             lbMovies.ItemsSource = movielist;
 
         }
-
+        // Adatok megjelenítése
         private void btnClose_Click(object sender, RoutedEventArgs e)
         {
             Close();
