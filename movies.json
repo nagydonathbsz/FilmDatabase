@@ -1,0 +1,866 @@
+[
+  {
+    "id": 1,
+    "title": "The Shawshank Redemption",
+    "year": 1994,
+    "genre": "Drama",
+    "director": "Frank Darabont",
+    "age_limit": "R",
+    "rating": 9.3
+  },
+  {
+    "id": 2,
+    "title": "The Godfather",
+    "year": 1972,
+    "genre": "Crime, Drama",
+    "director": "Francis Ford Coppola",
+    "age_limit": "R",
+    "rating": 9.2
+  },
+  {
+    "id": 3,
+    "title": "The Dark Knight",
+    "year": 2008,
+    "genre": "Action, Crime, Drama",
+    "director": "Christopher Nolan",
+    "age_limit": "PG-13",
+    "rating": 9.0
+  },
+  {
+    "id": 4,
+    "title": "The Godfather Part II",
+    "year": 1974,
+    "genre": "Crime, Drama",
+    "director": "Francis Ford Coppola",
+    "age_limit": "R",
+    "rating": 9.0
+  },
+  {
+    "id": 5,
+    "title": "12 Angry Men",
+    "year": 1957,
+    "genre": "Crime, Drama",
+    "director": "Sidney Lumet",
+    "age_limit": "Approved",
+    "rating": 9.0
+  },
+  {
+    "id": 6,
+    "title": "Schindler's List",
+    "year": 1993,
+    "genre": "Biography, Drama, History",
+    "director": "Steven Spielberg",
+    "age_limit": "R",
+    "rating": 9.0
+  },
+  {
+    "id": 7,
+    "title": "The Lord of the Rings: The Return of the King",
+    "year": 2003,
+    "genre": "Adventure, Drama, Fantasy",
+    "director": "Peter Jackson",
+    "age_limit": "PG-13",
+    "rating": 9.0
+  },
+  {
+    "id": 8,
+    "title": "Pulp Fiction",
+    "year": 1994,
+    "genre": "Crime, Drama",
+    "director": "Quentin Tarantino",
+    "age_limit": "R",
+    "rating": 8.9
+  },
+  {
+    "id": 9,
+    "title": "The Good, the Bad and the Ugly",
+    "year": 1966,
+    "genre": "Western",
+    "director": "Sergio Leone",
+    "age_limit": "R",
+    "rating": 8.8
+  },
+  {
+    "id": 10,
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "year": 2001,
+    "genre": "Adventure, Drama, Fantasy",
+    "director": "Peter Jackson",
+    "age_limit": "PG-13",
+    "rating": 8.9
+  },
+  {
+    "id": 11,
+    "title": "Fight Club",
+    "year": 1999,
+    "genre": "Drama",
+    "director": "David Fincher",
+    "age_limit": "R",
+    "rating": 8.8
+  },
+  {
+    "id": 12,
+    "title": "Forrest Gump",
+    "year": 1994,
+    "genre": "Drama, Romance",
+    "director": "Robert Zemeckis",
+    "age_limit": "PG-13",
+    "rating": 8.8
+  },
+  {
+    "id": 13,
+    "title": "Inception",
+    "year": 2010,
+    "genre": "Action, Adventure, Sci-Fi",
+    "director": "Christopher Nolan",
+    "age_limit": "PG-13",
+    "rating": 8.8
+  },
+  {
+    "id": 14,
+    "title": "Star Wars: Episode V - The Empire Strikes Back",
+    "year": 1980,
+    "genre": "Action, Adventure, Fantasy",
+    "director": "Irvin Kershner",
+    "age_limit": "PG",
+    "rating": 8.7
+  },
+  {
+    "id": 15,
+    "title": "The Matrix",
+    "year": 1999,
+    "genre": "Action, Sci-Fi",
+    "director": "The Wachowskis",
+    "age_limit": "R",
+    "rating": 8.7
+  },
+  {
+    "id": 16,
+    "title": "Goodfellas",
+    "year": 1990,
+    "genre": "Biography, Crime, Drama",
+    "director": "Martin Scorsese",
+    "age_limit": "R",
+    "rating": 8.7
+  },
+  {
+    "id": 17,
+    "title": "One Flew Over the Cuckoo's Nest",
+    "year": 1975,
+    "genre": "Drama",
+    "director": "Milos Forman",
+    "age_limit": "R",
+    "rating": 8.7
+  },
+  {
+    "id": 18,
+    "title": "Seven Samurai",
+    "year": 1954,
+    "genre": "Action, Drama",
+    "director": "Akira Kurosawa",
+    "age_limit": "Not rated",
+    "rating": 8.6
+  },
+  {
+    "id": 19,
+    "title": "Se7en",
+    "year": 1995,
+    "genre": "Crime, Drama, Mystery",
+    "director": "David Fincher",
+    "age_limit": "R",
+    "rating": 8.6
+  },
+  {
+    "id": 20,
+    "title": "The Silence of the Lambs",
+    "year": 1991,
+    "director": "Jonathan Demme",
+    "genre": "Crime, Drama, Thriller",
+    "age_limit": "R",
+    "rating": 8.6
+  },
+  {
+    "id": 21,
+    "title": "City of God",
+    "year": 2002,
+    "genre": "Crime, Drama",
+    "director": "Fernando Meirelles, Kátia Lund",
+    "age_limit": "R",
+    "rating": 8.6
+  },
+  {
+    "id": 22,
+    "title": "It's a Wonderful Life",
+    "year": 1946,
+    "genre": "Drama, Family, Fantasy",
+    "director": "Frank Capra",
+    "age_limit": "PG",
+    "rating": 8.6
+  },
+  {
+    "id": 23,
+    "title": "The Green Mile",
+    "year": 1999,
+    "genre": "Crime, Drama, Fantasy",
+    "director": "Frank Darabont",
+    "age_limit": "R",
+    "rating": 8.6
+  },
+  {
+    "id": 24,
+    "title": "Star Wars: Episode IV - A New Hope",
+    "year": 1977,
+    "genre": "Action, Adventure, Fantasy",
+    "director": "George Lucas",
+    "age_limit": "PG",
+    "rating": 8.6
+  },
+  {
+    "id": 25,
+    "title": "Interstellar",
+    "year": 2014,
+    "genre": "Adventure, Drama, Sci-Fi",
+    "director": "Christopher Nolan",
+    "age_limit": "PG-13",
+    "rating": 8.7
+  },
+  {
+    "id": 26,
+    "title": "Parasite",
+    "year": 2019,
+    "genre": "Comedy, Drama, Thriller",
+    "director": "Bong Joon Ho",
+    "age_limit": "R",
+    "rating": 8.5
+  },
+  {
+    "id": 27,
+    "title": "Leon: The Professional",
+    "year": 1994,
+    "genre": "Action, Crime, Drama",
+    "director": "Luc Besson",
+    "age_limit": "R",
+    "rating": 8.5
+  },
+  {
+    "id": 28,
+    "title": "The Pianist",
+    "year": 2002,
+    "genre": "Biography, Drama, Music",
+    "director": "Roman Polanski",
+    "age_limit": "R",
+    "rating": 8.5
+  },
+  {
+    "id": 29,
+    "title": "The Usual Suspects",
+    "year": 1995,
+    "genre": "Crime, Drama, Mystery",
+    "director": "Bryan Singer",
+    "age_limit": "R",
+    "rating": 8.5
+  },
+  {
+    "id": 30,
+    "title": "The Lion King",
+    "year": 1994,
+    "genre": "Animation, Adventure, Drama",
+    "director": "Roger Allers, Rob Minkoff",
+    "age_limit": "G",
+    "rating": 8.5
+  },
+  {
+    "id": 31,
+    "title": "Saving Private Ryan",
+    "year": 1998,
+    "genre": "Drama, War",
+    "director": "Steven Spielberg",
+    "age_limit": "R",
+    "rating": 8.6
+  },
+  {
+    "id": 32,
+    "title": "The Departed",
+    "year": 2006,
+    "genre": "Crime, Drama, Thriller",
+    "director": "Martin Scorsese",
+    "age_limit": "R",
+    "rating": 8.5
+  },
+  {
+    "id": 33,
+    "title": "The Prestige",
+    "year": 2006,
+    "genre": "Drama, Mystery, Sci-Fi",
+    "director": "Christopher Nolan",
+    "age_limit": "PG-13",
+    "rating": 8.5
+  },
+  {
+    "id": 34,
+    "title": "The Lord of the Rings: The Two Towers",
+    "year": 2002,
+    "genre": "Adventure, Drama, Fantasy",
+    "director": "Peter Jackson",
+    "age_limit": "PG-13",
+    "rating": 8.8
+  },
+  {
+    "id": 35,
+    "title": "Gladiator",
+    "year": 2000,
+    "genre": "Action, Adventure, Drama",
+    "director": "Ridley Scott",
+    "age_limit": "R",
+    "rating": 8.5
+  },
+  {
+    "id": 36,
+    "title": "American History X",
+    "year": 1998,
+    "genre": "Crime, Drama",
+    "director": "Tony Kaye",
+    "age_limit": "R",
+    "rating": 8.5
+  },
+  {
+    "id": 37,
+    "title": "The Intouchables",
+    "year": 2011,
+    "genre": "Biography, Comedy, Drama",
+    "director": "Olivier Nakache, Éric Toledano",
+    "age_limit": "R",
+    "rating": 8.5
+  },
+  {
+    "id": 38,
+    "title": "The Shining",
+    "year": 1980,
+    "genre": "Drama, Horror",
+    "director": "Stanley Kubrick",
+    "age_limit": "R",
+    "rating": 8.4
+  },
+  {
+    "id": 39,
+    "title": "WALL·E",
+    "year": 2008,
+    "genre": "Animation, Adventure, Family",
+    "director": "Andrew Stanton",
+    "age_limit": "G",
+    "rating": 8.4
+  },
+  {
+    "id": 40,
+    "title": "Avengers: Infinity War",
+    "year": 2018,
+    "genre": "Action, Adventure, Sci-Fi",
+    "director": "Anthony Russo, Joe Russo",
+    "age_limit": "PG-13",
+    "rating": 8.4
+  },
+  {
+    "id": 41,
+    "title": "Spider-Man: Into the Spider-Verse",
+    "year": 2018,
+    "genre": "Animation, Action, Adventure",
+    "director": "Bob Persichetti, Peter Ramsey, Rodney Rothman",
+    "age_limit": "PG",
+    "rating": 8.4
+  },
+  {
+    "id": 42,
+    "title": "Django Unchained",
+    "year": 2012,
+    "genre": "Drama, Western",
+    "director": "Quentin Tarantino",
+    "age_limit": "R",
+    "rating": 8.5
+  },
+  {
+    "id": 43,
+    "title": "Whiplash",
+    "year": 2014,
+    "genre": "Drama, Music",
+    "director": "Damien Chazelle",
+    "age_limit": "R",
+    "rating": 8.5
+  },
+  {
+    "id": 44,
+    "title": "Coco",
+    "year": 2017,
+    "genre": "Animation, Adventure, Comedy",
+    "director": "Lee Unkrich, Adrian Molina",
+    "age_limit": "PG",
+    "rating": 8.4
+  },
+  {
+    "id": 45,
+    "title": "Avengers: Endgame",
+    "year": 2019,
+    "genre": "Action, Adventure, Drama",
+    "director": "Anthony Russo, Joe Russo",
+    "age_limit": "PG-13",
+    "rating": 8.4
+  },
+  {
+    "id": 46,
+    "title": "Braveheart",
+    "year": 1995,
+    "genre": "Biography, Drama, History",
+    "director": "Mel Gibson",
+    "age_limit": "R",
+    "rating": 8.3
+  },
+  {
+    "id": 47,
+    "title": "The Wolf of Wall Street",
+    "year": 2013,
+    "genre": "Biography, Comedy, Crime",
+    "director": "Martin Scorsese",
+    "age_limit": "R",
+    "rating": 8.2
+  },
+  {
+    "id": 48,
+    "title": "Inglourious Basterds",
+    "year": 2009,
+    "genre": "Adventure, Drama, War",
+    "director": "Quentin Tarantino",
+    "age_limit": "R",
+    "rating": 8.4
+  },
+  {
+    "id": 49,
+    "title": "The Truman Show",
+    "year": 1998,
+    "genre": "Comedy, Drama",
+    "director": "Peter Weir",
+    "age_limit": "PG",
+    "rating": 8.2
+  },
+  {
+    "id": 50,
+    "title": "The Grand Budapest Hotel",
+    "year": 2014,
+    "genre": "Adventure, Comedy, Crime",
+    "director": "Wes Anderson",
+    "age_limit": "R",
+    "rating": 8.1
+  },
+  {
+    "id": 51,
+    "title": "The Social Network",
+    "year": 2010,
+    "genre": "Biography, Drama",
+    "director": "David Fincher",
+    "age_limit": "R",
+    "rating": 7.8
+  },
+  {
+    "id": 52,
+    "title": "Mad Max: Fury Road",
+    "year": 2015,
+    "genre": "Action, Adventure, Sci-Fi",
+    "director": "George Miller",
+    "age_limit": "R",
+    "rating": 8.1
+  },
+  {
+    "id": 53,
+    "title": "Slumdog Millionaire",
+    "year": 2008,
+    "genre": "Drama, Romance",
+    "director": "Danny Boyle, Loveleen Tandan",
+    "age_limit": "R",
+    "rating": 8.0
+  },
+  {
+    "id": 54,
+    "title": "Shutter Island",
+    "year": 2010,
+    "genre": "Mystery, Thriller",
+    "director": "Martin Scorsese",
+    "age_limit": "R",
+    "rating": 8.2
+  },
+  {
+    "id": 55,
+    "title": "The Pursuit of Happyness",
+    "year": 2006,
+    "genre": "Biography, Drama",
+    "director": "Gabriele Muccino",
+    "age_limit": "R",
+    "rating": 8.0
+  },
+  {
+    "id": 56,
+    "title": "The Martian",
+    "year": 2015,
+    "genre": "Adventure, Drama, Sci-Fi",
+    "director": "Ridley Scott",
+    "age_limit": "R",
+    "rating": 8.0
+  },
+  {
+    "id": 57,
+    "title": "Logan",
+    "year": 2017,
+    "genre": "Action, Drama, Sci-Fi",
+    "director": "James Mangold",
+    "age_limit": "R",
+    "rating": 8.1
+  },
+  {
+    "id": 58,
+    "title": "Joker",
+    "year": 2019,
+    "genre": "Crime, Drama, Thriller",
+    "director": "Todd Phillips",
+    "age_limit": "R",
+    "rating": 8.4
+  },
+  {
+    "id": 59,
+    "title": "Black Panther",
+    "year": 2018,
+    "genre": "Action, Adventure, Sci-Fi",
+    "director": "Ryan Coogler",
+    "age_limit": "PG-13",
+    "rating": 7.3
+  },
+  {
+    "id": 60,
+    "title": "Toy Story 3",
+    "year": 2010,
+    "genre": "Animation, Adventure, Comedy",
+    "director": "Lee Unkrich",
+    "age_limit": "G",
+    "rating": 8.3
+  },
+  {
+    "id": 61,
+    "title": "Interstellar",
+    "year": 2014,
+    "genre": "Adventure, Drama, Sci-Fi",
+    "director": "Christopher Nolan",
+    "age_limit": "PG",
+    "rating": 8.7
+  },
+  {
+    "id": 62,
+    "title": "The Revenant",
+    "year": 2015,
+    "genre": "Action, Adventure, Drama",
+    "director": "Alejandro G. Iñárritu",
+    "age_limit": "R",
+    "rating": 8.0
+  },
+  {
+    "id": 63,
+    "title": "Star Wars: Episode IV - A New Hope",
+    "year": 1977,
+    "genre": "Action, Adventure, Sci-Fi",
+    "director": "George Lucas",
+    "age_limit": "PG",
+    "rating": 8.6
+  },
+  {
+    "id": 64,
+    "title": "1917",
+    "year": 2019,
+    "genre": "Action, Drama, War",
+    "director": "Sam Mendes",
+    "age_limit": "R",
+    "rating": 8.2
+  },
+  {
+    "id": 65,
+    "title": "Harry Potter and the Sorcerer's Stone",
+    "year": 2001,
+    "genre": "Adventure, Family, Fantasy",
+    "director": "Chris Columbus",
+    "age_limit": "PG-13",
+    "rating": 7.7
+  },
+  {
+    "id": 66,
+    "title": "Oppenheimer",
+    "year": 2023,
+    "genre": "Biography, Drama, History",
+    "director": "Christopher Nolan, Kai Bird, Martin Sherwin",
+    "age_limit": "R",
+    "rating": 8.3
+  },
+  {
+    "id": 67,
+    "title": "Inside Out",
+    "year": 2015,
+    "genre": "Animation, Adventure, Comedy",
+    "director": "Pete Docter, Ronnie Del Carmen",
+    "age_limit": "G",
+    "rating": 8.1
+  },
+  {
+    "id": 68,
+    "title": "The Avengers",
+    "year": 2012,
+    "genre": "Action, Adventure, Sci-Fi",
+    "director": "Joss Whedon",
+    "age_limit": "PG-13",
+    "rating": 8.0
+  },
+  {
+    "id": 69,
+    "title": "Guardians of the Galaxy",
+    "year": 2014,
+    "genre": "Action, Adventure, Comedy",
+    "director": "James Gunn",
+    "age_limit": "PG-13",
+    "rating": 8.0
+  },
+  {
+    "id": 70,
+    "title": "Frozen",
+    "year": 2013,
+    "genre": "Animation, Adventure, Comedy",
+    "director": "Chris Buck, Jennifer Lee",
+    "age_limit": "G",
+    "rating": 7.4
+  },
+  {
+    "id": 71,
+    "title": "WALL-E",
+    "year": 2008,
+    "genre": "Animation, Adventure, Family",
+    "director": "Andrew Stanton",
+    "age_limit": "G",
+    "rating": 8.4
+  },
+  {
+    "id": 72,
+    "title": "Finding Nemo",
+    "year": 2003,
+    "genre": "Animation, Adventure, Comedy",
+    "director": "Andrew Stanton, Lee Unkrich",
+    "age_limit": "G",
+    "rating": 8.2
+  },
+  {
+    "id": 73,
+    "title": "The Incredibles",
+    "year": 2004,
+    "genre": "Animation, Action, Adventure",
+    "director": "Brad Bird",
+    "age_limit": "PG",
+    "rating": 8.0
+  },
+  {
+    "id": 74,
+    "title": "Up",
+    "year": 2009,
+    "genre": "Animation, Adventure, Comedy",
+    "director": "Pete Docter, Bob Peterson",
+    "age_limit": "PG",
+    "rating": 8.3
+  },
+  {
+    "id": 75,
+    "title": "Monsters, Inc.",
+    "year": 2001,
+    "genre": "Animation, Adventure, Comedy",
+    "director": "Pete Docter, David Silverman, Lee Unkrich",
+    "age_limit": "G",
+    "rating": 8.1
+  },
+  {
+    "id": 76,
+    "title": "Zootopia",
+    "year": 2016,
+    "genre": "Animation, Adventure, Comedy",
+    "director": "Byron Howard, Rich Moore, Jared Bush",
+    "age_limit": "PG",
+    "rating": 8.0
+  },
+  {
+    "id": 77,
+    "title": "Moana",
+    "year": 2016,
+    "genre": "Animation, Adventure, Comedy",
+    "director": "Ron Clements, John Musker, Don Hall, Chris Williams",
+    "age_limit": "G",
+    "rating": 7.4
+  },
+  {
+    "id": 78,
+    "title": "Ratatouille",
+    "year": 2007,
+    "genre": "Animation, Adventure, Comedy",
+    "director": "Brad Bird, Jan Pinkava",
+    "age_limit": "G",
+    "rating": 8.1
+  },
+  {
+    "id": 79,
+    "title": "Tangled",
+    "year": 2010,
+    "genre": "Animation, Adventure, Comedy",
+    "director": "Nathan Greno, Byron Howard",
+    "age_limit": "G",
+    "rating": 7.7
+  },
+  {
+    "id": 80,
+    "title": "Beauty and the Beast",
+    "year": 1991,
+    "genre": "Animation, Family, Fantasy",
+    "director": "Gary Trousdale, Kirk Wise",
+    "age_limit": "G",
+    "rating": 8.0
+  },
+  {
+    "id": 81,
+    "title": "The Great Dictator",
+    "year": 1940,
+    "genre": "Comedy, Drama",
+    "director": "Charlie Chaplin",
+    "age_limit": "G",
+    "rating": 8.4
+  },
+  {
+    "id": 82,
+    "title": "City Lights",
+    "year": 1931,
+    "genre": "Comedy, Drama, Romance",
+    "director": "Charlie Chaplin",
+    "age_limit": "G",
+    "rating": 8.5
+  },
+  {
+    "id": 83,
+    "title": "Sunset Boulevard",
+    "year": 1950,
+    "genre": "Drama, Film-Noir",
+    "director": "Billy Wilder",
+    "age_limit": "Approved",
+    "rating": 8.4
+  },
+  {
+    "id": 84,
+    "title": "12 Years a Slave",
+    "year": 2013,
+    "genre": "Biography, Drama, History",
+    "director": "Steve McQueen",
+    "age_limit": "R",
+    "rating": 8.1
+  },
+  {
+    "id": 85,
+    "title": "Spirited Away",
+    "year": 2001,
+    "genre": "Animation, Adventure, Drama",
+    "director": "Hayao Miyazaki",
+    "age_limit": "PG",
+    "rating": 8.6
+  },
+  {
+    "id": 86,
+    "title": "The Departed",
+    "year": 2006,
+    "genre": "Crime, Drama, Thriller",
+    "director": "Martin Scorsese",
+    "age_limit": "R",
+    "rating": 8.5
+  },
+  {
+    "id": 87,
+    "title": "Good Will Hunting",
+    "year": 1997,
+    "genre": "Drama, Romance",
+    "director": "Gus Van Sant",
+    "age_limit": "R",
+    "rating": 8.3
+  },
+  {
+    "id": 88,
+    "title": "Shrek",
+    "year": 2001,
+    "genre": "Adventure, Animation, Parody",
+    "director": "Andrew Adamson",
+    "age_limit": "PG",
+    "rating": 7.9
+  },
+  {
+    "id": 89,
+    "title": "A Clockwork Orange",
+    "year": 1971,
+    "genre": "Crime, Drama, Sci-Fi",
+    "director": "Stanley Kubrick",
+    "age_limit": "R",
+    "rating": 8.2
+  },
+  {
+    "id": 90,
+    "title": "Captain America: Civil War",
+    "year": 2016,
+    "genre": "Action",
+    "director": "Anthony Russo",
+    "age_limit": "PG-13",
+    "rating": 7.8
+  },
+  {
+    "id": 91,
+    "title": "Alien",
+    "year": 1979,
+    "genre": "Horror, Sci-Fi",
+    "director": "Ridley Scott",
+    "age_limit": "R",
+    "rating": 8.5
+  },
+  {
+    "id": 92,
+    "title": "Blade Runner",
+    "year": 1982,
+    "genre": "Drama, Sci-Fi",
+    "director": "Ridley Scott",
+    "age_limit": "R",
+    "rating": 8.1
+  },
+  {
+    "id": 93,
+    "title": "The Big Lebowski",
+    "year": 1998,
+    "genre": "Comedy, Crime",
+    "director": "Joel Coen, Ethan Coen",
+    "age_limit": "R",
+    "rating": 8.1
+  },
+  {
+    "id": 94,
+    "title": "The Bridge on the River Kwai",
+    "year": 1957,
+    "genre": "Adventure, Drama, War",
+    "director": "David Lean",
+    "age_limit": "PG",
+    "rating": 8.1
+  },
+  {
+    "id": 95,
+    "title": "The Hunt",
+    "year": 2012,
+    "genre": "Drama",
+    "director": "Thomas Vinterberg",
+    "age_limit": "R",
+    "rating": 8.3
+  },
+  {
+    "id": 96,
+    "title": "Transformers One",
+    "year": 2024,
+    "genre": "Action, Animation, Sci-Fi",
+    "director": "John Cooley",
+    "age_limit": "PG",
+    "rating": 7.6
+  }
+]
