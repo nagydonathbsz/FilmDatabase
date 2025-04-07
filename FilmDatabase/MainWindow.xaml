@@ -90,6 +90,9 @@
                             <TextBlock Text="Director:" FontWeight="Bold"/>
                             <TextBlock x:Name="tbDirector" Text="-" Margin="0,0,0,10"/>
 
+                            <TextBlock Text="Actor:" FontWeight="Bold"/>
+                            <TextBlock x:Name="tbActor" Text="-" Margin="0,0,0,10"/>
+
                             <TextBlock Text="Rating:" FontWeight="Bold"/>
                             <TextBlock x:Name="tbRating" Text="-" Margin="0,0,0,10"/>
                         </StackPanel>
