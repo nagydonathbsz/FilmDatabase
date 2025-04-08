@@ -6,24 +6,22 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace FejlesztokozpontEF.Database
 {
-    class FejlesztokozpontContext : DbContext
+    public class FejlesztokozpontContext : DbContext
     {
-        public DbSet<Movie> Movie { get; set; }
-        public DbSet<Person> Person { get; set; } 
-        public DbSet<Genre> Genre { get; set; }
-       
-
-        public FejlesztokozpontContext() : base("name=FejlesztokozpontContext") { }
-
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        public FejlesztokozpontContext() : base("name=FejlesztokozpontContext") // lásd web.config vagy app.config
         {
-            base.OnModelCreating(modelBuilder);
-            modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
         }
+
+        public DbSet<Movie> Movies { get; set; }
+        public DbSet<Person> People { get; set; }
+        public DbSet<Genre> Genres { get; set; }
+        public DbSet<Movie_Actor> Movie_Actor { get; set; }
+        public DbSet<Movie_Director> Movie_Director { get; set; }
     }
 }

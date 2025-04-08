@@ -135,6 +135,8 @@
   <ItemGroup>
     <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\Movie.cs" />
+    <Compile Include="Models\Movie_Actor.cs" />
+    <Compile Include="Models\Movie_Director.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
