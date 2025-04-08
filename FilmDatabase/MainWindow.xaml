@@ -81,9 +81,6 @@
                         <StackPanel Margin="10">
                             <TextBlock x:Name="tbTitle" Text="Select a movie" FontSize="24" FontWeight="Bold" Margin="0,0,0,10"/>
 
-                            <TextBlock Text="Year:" FontWeight="Bold"/>
-                            <TextBlock x:Name="tbYear" Text="-" Margin="0,0,0,10"/>
-
                             <TextBlock Text="Genre:" FontWeight="Bold"/>
                             <TextBlock x:Name="tbGenre" Text="-" Margin="0,0,0,10"/>
 
