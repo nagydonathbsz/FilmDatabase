@@ -14,7 +14,7 @@ namespace FejlesztokozpontEF.Database
     class FejlesztokozpontContext : DbContext
     {
         public DbSet<Movie> Movie { get; set; }
-        public DbSet<Person> Person { get; set; }
+        public DbSet<Person> Person { get; set; } 
         public DbSet<Genre> Genre { get; set; }
        
 

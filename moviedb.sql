@@ -1,3 +1,5 @@
+USE moviedb;
+
 -- phpMyAdmin SQL Dump
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
@@ -97,7 +99,8 @@ INSERT INTO `movie` (`MovieID`, `Title`, `Year`, `Rating`, `GenreID`) VALUES
 
 CREATE TABLE `movie_actor` (
   `PersonID` varchar(10) NOT NULL,
-  `MovieID` varchar(10) NOT NULL
+  `MovieID` varchar(10) NOT NULL,
+  `Movie_ActorID` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -149,7 +152,8 @@ INSERT INTO `movie_actor` (`PersonID`, `MovieID`) VALUES
 
 CREATE TABLE `movie_director` (
   `PersonID` varchar(10) NOT NULL,
-  `MovieID` varchar(10) NOT NULL
+  `MovieID` varchar(10) NOT NULL,
+  `Movie_DirectorID` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
