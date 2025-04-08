@@ -9,6 +9,7 @@ using System.Windows.Documents;
 using System.Windows.Controls;
 using FejlesztokozpontEF.Database;
 using FilmDatabase.Models;
+using System.Linq;
 
 namespace FilmDatabase
 {
@@ -17,57 +18,46 @@ namespace FilmDatabase
     /// </summary>
     public partial class MainWindow : Window
     {
-        private FejlesztokozpontContext ctx = new FejlesztokozpontContext();
+        private FejlesztokozpontContext _context = new FejlesztokozpontContext();
+
         public MainWindow()
         {
             InitializeComponent();
-            foreach (var item in ctx.Movie)
+            LoadMovies();
+        }
+
+        private void LoadMovies()
+        {
+            var movies = _context.Movies.ToList();
+            lbMovies.ItemsSource = movies;
+        }
+
+        private void MovieComboBox_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+        {
+            if (lbMovies.SelectedItem is Movie selectedMovie)
             {
-                lbMovies.Items.Add(item.Title);
-            }
-        }
+                var szoveg = "";
 
-        private void lbMovieList_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            var title = (string)lbMovies.SelectedItem;
-            var movie = ctx.Movie
-                .Include(x => x.Genre)
-                .Where(x => x.Title == title).FirstOrDefault();
-            MovieToFields(movie);
-        }
-        private void MovieToFields(Movie movie, Person person)
-        {
-            if (movie == null)
-                return;
-            tbGenre.Text = movie.GenreID;
-            tbDirector.Text = person.;
-            tbYear.Text = movie.Year.ToString();
-            tbDirector.Text = movie.Director;
-            tbCountry.Text = movie.Country.Name;
-            tbLanguage.Text = movie.Language;
-            tbRuntime.Text = movie.Runtime.ToString();
-        }
-        // Adatok megjelenítése
-        private void btnClose_Click(object sender, RoutedEventArgs e)
-        {
-            Close();
-        }
-        private void MIS_Click(object sender, RoutedEventArgs e)
-        {
-           
-        }
-        private void MISA_Click(object sender, RoutedEventArgs e)
-        {
-            
-        }
-        private void MIP_Click(object sender, RoutedEventArgs e)
-        {
-            
-        }
+                // Színészek lekérdezése
+                var actors = _context.Movie_Actor
+                    .Where(ma => ma.MovieID == selectedMovie.MovieID)
+                    .Select(ma => "Színész: " + ma.Person.FirstName + " " + ma.Person.LastName)
+                    .ToList();
 
-        private void lbMovies_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            
+                szoveg += "Színészek:\n";
+                szoveg += actors.Count > 0 ? string.Join("\n", actors) + "\n\n" : "Nincs adat\n\n";
+
+                // Rendezõk lekérdezése
+                var directors = _context.Movie_Director
+                    .Where(md => md.MovieID == selectedMovie.MovieID)
+                    .Select(md => "Rendezõ: " + md.Person.FirstName + " " + md.Person.LastName)
+                    .ToList();
+
+                szoveg += "Rendezõk:\n";
+                szoveg += directors.Count > 0 ? string.Join("\n", directors) : "Nincs adat";
+
+                tbPeople.Text = szoveg;
+            } 
         }
     }
 }
