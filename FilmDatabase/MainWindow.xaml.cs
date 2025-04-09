@@ -31,6 +31,9 @@ namespace FilmDatabase
         {
             var movies = _context.movie.ToList();
             lbMovies.ItemsSource = movies;
+
+            tbMax.Text = movies.OrderByDescending(m => m.Rating).First().Title.ToString();
+                
         }
 
         private void lbMovies_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
@@ -45,7 +48,7 @@ namespace FilmDatabase
                 var szoveg = "";
 
                 // Színészek lekérdezése
-                var actors = _context.Movie_Actor
+                var actors = _context.movie_actor
                     .Where(ma => ma.MovieID == selectedMovie.MovieID)
                     .Select(ma => "Színész: " + ma.Person.FirstName + " " + ma.Person.LastName)
                     .ToList();
@@ -54,7 +57,7 @@ namespace FilmDatabase
                 szoveg += actors.Count() > 0 ? string.Join("\n", actors) + "\n\n" : "Nincs adat\n\n";
 
                 // Rendezõk lekérdezése
-                var directors = _context.Movie_Director
+                var directors = _context.movie_director
                     .Where(md => md.MovieID == selectedMovie.MovieID)
                     .Select(md => "Rendezõ: " + md.Person.FirstName + " " + md.Person.LastName)
                     .ToList();

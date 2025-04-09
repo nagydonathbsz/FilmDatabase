@@ -19,10 +19,10 @@ namespace FilmDatabase
         }
 
         public DbSet<Movie> movie { get; set; }
-        public DbSet<Person> People { get; set; }
-        public DbSet<Genre> Genres { get; set; }
-        public DbSet<Movie_Actor> Movie_Actor { get; set; }
-        public DbSet<Movie_Director> Movie_Director { get; set; }
+        public DbSet<Person> people { get; set; }
+        public DbSet<Genre> genre { get; set; }
+        public DbSet<Movie_Actor> movie_actor { get; set; }
+        public DbSet<Movie_Director> movie_director { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
