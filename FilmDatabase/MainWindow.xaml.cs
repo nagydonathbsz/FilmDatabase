@@ -10,6 +10,7 @@ using System.Windows.Controls;
 using FilmDatabase.Models;
 using System.Linq;
 using static System.Net.Mime.MediaTypeNames;
+using System.Windows.Controls.Primitives;
 
 namespace FilmDatabase
 {
@@ -50,7 +51,7 @@ namespace FilmDatabase
                     .ToList();
 
                 szoveg += "Színészek:\n";
-                szoveg += actors.Count > 0 ? string.Join("\n", actors) + "\n\n" : "Nincs adat\n\n";
+                szoveg += actors.Count() > 0 ? string.Join("\n", actors) + "\n\n" : "Nincs adat\n\n";
 
                 // Rendezõk lekérdezése
                 var directors = _context.Movie_Director
@@ -59,12 +60,46 @@ namespace FilmDatabase
                     .ToList();
 
                 szoveg += "Rendezõk:\n";
-                szoveg += directors.Count > 0 ? string.Join("\n", directors) : "Nincs adat";
+                szoveg += directors.Count() > 0 ? string.Join("\n", directors) : "Nincs adat";
 
                 tbPeople.Text = szoveg;
 
                 tbRating.Text = Math.Round(selectedMovie.Rating).ToString();
-            } 
+            }
+        }
+        private void MIB_G(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void MIB_M(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void MIB_MA(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void MIB_MD(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void MIB_P(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void Btn_New(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Btn_Del(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Btn_Mod(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
