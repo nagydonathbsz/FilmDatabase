@@ -9,16 +9,22 @@ using FilmDatabase.Models;
 
 namespace FilmDatabase
 {
- 
+    [Table("movie")]
     public class Movie
     {
         [Key]
-        public int MovieID { get; set; }
+        public string MovieID { get; set; }
         public double Rating { get; set; }
         [Required]
         public string Title { get; set; }
-        public int GenreID { get; set; }
+        public string GenreID { get; set; }
         public int Year { get; set; }
+
+        public Movie()
+        {
+            Movie_Actors = new HashSet<Movie_Actor>();
+            Movie_Directors = new HashSet<Movie_Director>();
+        }
 
         [ForeignKey("GenreID")]
         public virtual Genre Genre { get; set; }

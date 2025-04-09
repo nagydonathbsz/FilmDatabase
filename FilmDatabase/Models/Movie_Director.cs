@@ -11,10 +11,10 @@ namespace FilmDatabase.Models
     public class Movie_Director
     {
         [Key, Column(Order = 0)]
-        public int MovieID { get; set; }
+        public string MovieID { get; set; }
 
         [Key, Column(Order = 1)]
-        public int PersonID { get; set; }
+        public string PersonID { get; set; }
 
         [ForeignKey("MovieID")]
         public virtual Movie Movie { get; set; }

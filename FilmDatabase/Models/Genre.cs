@@ -10,7 +10,7 @@ namespace FilmDatabase.Models
     public class Genre
     {
         [Key]
-        public int GenreID { get; set; }
+        public string GenreID { get; set; }
         public string GenreName { get; set; }
 
         public virtual ICollection<Movie> Movies { get; set; }

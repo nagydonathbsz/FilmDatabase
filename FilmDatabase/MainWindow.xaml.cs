@@ -7,9 +7,9 @@ using Microsoft.Win32;
 using System.Windows.Media;
 using System.Windows.Documents;
 using System.Windows.Controls;
-using FejlesztokozpontEF.Database;
 using FilmDatabase.Models;
 using System.Linq;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace FilmDatabase
 {
@@ -28,14 +28,19 @@ namespace FilmDatabase
 
         private void LoadMovies()
         {
-            var movies = _context.Movies.ToList();
+            var movies = _context.movie.ToList();
             lbMovies.ItemsSource = movies;
         }
 
-        private void MovieComboBox_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+        private void lbMovies_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
         {
             if (lbMovies.SelectedItem is Movie selectedMovie)
             {
+
+                tbYear.Text = selectedMovie.Year.ToString();
+
+                tbGenre.Text = selectedMovie.Genre.GenreName;
+
                 var szoveg = "";
 
                 // Színészek lekérdezése
@@ -57,6 +62,8 @@ namespace FilmDatabase
                 szoveg += directors.Count > 0 ? string.Join("\n", directors) : "Nincs adat";
 
                 tbPeople.Text = szoveg;
+
+                tbRating.Text = Math.Round(selectedMovie.Rating).ToString();
             } 
         }
     }
