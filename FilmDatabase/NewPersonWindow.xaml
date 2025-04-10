@@ -8,9 +8,9 @@
         Title="Új személy" Height="250" Width="300">
     <Grid>
         <StackPanel Margin="20">
-            <TextBox x:Name="txtFirstName" Text="" Margin="5"/>
-            <TextBox x:Name="txtLastName" Text="" Margin="5"/>
-            <TextBox x:Name="txtNationality" Text="" Margin="5"/>
+            <TextBox x:Name="txtFirstName" Text="FirstName" Margin="5"/>
+            <TextBox x:Name="txtLastName" Text="LastName" Margin="5"/>
+            <TextBox x:Name="txtNationality" Text="Natonality" Margin="5"/>
             <DatePicker x:Name="dpBirthDate" Margin="5"/>
 
             <Button Content="Insert" Click="Insert_Click" Width="100" Margin="10"/>
