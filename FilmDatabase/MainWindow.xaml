@@ -50,7 +50,7 @@
                 </Menu>
             </Grid>
             <Grid Grid.Column="1">
-                <Button x:Name="btnClose" HorizontalAlignment="Right" Width="20" Height="24" Background="Red" Foreground="White" Content="X" FontWeight="Bold"/>
+                <Button x:Name="btnClose" HorizontalAlignment="Left" Width="20" Height="24" Background="Red" Foreground="White" Content="X" FontWeight="Bold" Margin="330,0,0,0" VerticalAlignment="Bottom" Click="BtnClose"/>
             </Grid>
 
         </Grid>
@@ -142,5 +142,4 @@
             </Grid>
         </Grid>
     </Grid>
-
 </Window>

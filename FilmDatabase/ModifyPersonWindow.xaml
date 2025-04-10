@@ -1,0 +1,19 @@
+﻿<Window x:Class="FilmDatabase.ModifyPersonWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FilmDatabase"
+        mc:Ignorable="d"
+       Title="Személy módosítása" Height="300" Width="300">
+    <Grid>
+        <StackPanel Margin="20">
+            <TextBox x:Name="txtPersonId" Text="Person ID" Margin="5"/>
+            <TextBox x:Name="txtFirstName" Text="New First Name" Margin="5"/>
+            <TextBox x:Name="txtLastName" Text="New Last Name" Margin="5"/>
+            <DatePicker x:Name="dpBirthDate" Margin="5"/>
+
+            <Button Content="Modify" Click="Modify_Click" Width="100" Margin="10"/>
+        </StackPanel>
+    </Grid>
+</Window>

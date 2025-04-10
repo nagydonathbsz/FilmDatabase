@@ -34,11 +34,13 @@ namespace FilmDatabase
             lbMovies.ItemsSource = movies;
 
             tbMax.Text = movies.OrderByDescending(m => m.Rating).First().Title.ToString();
-            tbGp.Text = _context.genre
+            var topGenre = _context.genre
                 .GroupBy(mg => mg.GenreID)
                 .OrderByDescending(g => g.Count())
                 .Select(g => g.Key)
                 .FirstOrDefault();
+
+            tbGp.Text = topGenre != null ? topGenre : "N/A";
 
             var oldestActor = _context.movie_actor
                 .Select(ma => ma.Person)
@@ -53,8 +55,6 @@ namespace FilmDatabase
                 .FirstOrDefault();
 
             tbYD.Text = youngestDirector != null ? $"{youngestDirector.FirstName} {youngestDirector.LastName}" : "N/A";
-
-
         }
 
         private void lbMovies_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
@@ -88,7 +88,7 @@ namespace FilmDatabase
 
                 tbPeople.Text = szoveg;
 
-                tbRating.Text = Math.Round(selectedMovie.Rating).ToString();
+                tbRating.Text = Math.Round(selectedMovie.Rating, 2).ToString();
             }
         }
         private void MIB_G(object sender, RoutedEventArgs e)
@@ -115,21 +115,31 @@ namespace FilmDatabase
         private void Btn_New(object sender, RoutedEventArgs e)
         {
 
+            var window = new NewPersonWindow();
+            window.ShowDialog();
+
         }
 
         private void Btn_Del(object sender, RoutedEventArgs e)
         {
-
+            var window = new DeletePersonWindow();
+            window.ShowDialog();
         }
 
         private void Btn_Mod(object sender, RoutedEventArgs e)
         {
-
+            var window = new ModifyPersonWindow();
+            window.ShowDialog();
         }
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void BtnClose(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }
