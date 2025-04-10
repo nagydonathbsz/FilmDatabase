@@ -25,7 +25,7 @@
 
             <Grid Grid.Column="0">
                 <Menu Height="auto" FontSize="18"  FontWeight="Normal" VerticalAlignment="Center" HorizontalAlignment="Left" Background="Black">
-                    <MenuItem Header="_File" Foreground="White">
+                    <MenuItem Header="_File" Foreground="White" Click="MenuItem_Click">
                         <MenuItem x:Name="MIH" Header="_Home"  FontWeight="Light" Foreground="Black"/>
                         <MenuItem x:Name="MIS" Header="_Save"  FontWeight="Light" Foreground="Black"/>
                         <MenuItem x:Name="MISA" Header="_Save As"  FontWeight="Light" Foreground="Black"/>
@@ -88,26 +88,23 @@
 
                 <Grid Grid.Row="0">
                     <DockPanel>
-                        <StackPanel Margin="10">
-                            <ScrollViewer>
-                                <StackPanel>
-                                    <TextBlock x:Name="tbTitle" Text="Select a movie" FontSize="24" FontWeight="Bold" Margin="0,0,0,10"/>
+                        <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="10">
+                            <StackPanel>
+                                <TextBlock x:Name="tbTitle" Text="Select a movie" FontSize="24" FontWeight="Bold" Margin="0,0,0,10"/>
 
-                                    <TextBlock Text="Year:" FontWeight="Bold"/>
-                                    <TextBlock x:Name="tbYear" Text="-" Margin="0,0,0,10"/>
+                                <TextBlock Text="Year:" FontWeight="Bold"/>
+                                <TextBlock x:Name="tbYear" Text="-" Margin="0,0,0,10"/>
 
+                                <TextBlock Text="Genre:" FontWeight="Bold"/>
+                                <TextBlock x:Name="tbGenre" Text="-" Margin="0,0,0,10"/>
 
-                                    <TextBlock Text="Genre:" FontWeight="Bold"/>
-                                    <TextBlock x:Name="tbGenre" Text="-" Margin="0,0,0,10"/>
+                                <TextBlock Text="People:" FontWeight="Bold"/>
+                                <TextBlock x:Name="tbPeople" Text="-" Margin="0,0,0,10"/>
 
-                                    <TextBlock Text="People:" FontWeight="Bold"/>
-                                    <TextBlock x:Name="tbPeople" Text="-" Margin="0,0,0,10"/>
-
-                                    <TextBlock Text="Rating:" FontWeight="Bold"/>
-                                    <TextBlock x:Name="tbRating" Text="-" Margin="0,0,0,10"/>
-                                </StackPanel>
-                            </ScrollViewer>
-                        </StackPanel>
+                                <TextBlock Text="Rating:" FontWeight="Bold"/>
+                                <TextBlock x:Name="tbRating" Text="-" Margin="0,0,0,10"/>
+                            </StackPanel>
+                        </ScrollViewer>
                     </DockPanel>
                 </Grid>
 
