@@ -42,8 +42,8 @@
                     <MenuItem Header="_Search by" Foreground="White">
                         <MenuItem x:Name="MIG" Header="Genre" Click="MIB_G"  FontWeight="Light" Foreground="Black"/>
                         <MenuItem x:Name="MIM" Header="Movie" Click="MIB_M" FontWeight="Light" Foreground="Black"/>
-                        <MenuItem x:Name="MIMA" Header="Movie_Actor" Click="MIB_MA" FontWeight="Light" Foreground="Black"/>
-                        <MenuItem x:Name="MIMD" Header="Movie_Director" Click="MIB_MD" FontWeight="Light" Foreground="Black"/>
+                        <MenuItem x:Name="MIY" Header="Year" Click="MIB_Y" FontWeight="Light" Foreground="Black"/>
+                        <MenuItem x:Name="MIR" Header="Rating" Click="MIB_R" FontWeight="Light" Foreground="Black"/>
                     </MenuItem>
                     <TextBox x:Name="tbSb" Width="150" IsEnabled="False" TextChanged="tbSb_TextChanged"></TextBox>
                 </Menu>
