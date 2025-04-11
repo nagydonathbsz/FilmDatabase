@@ -91,25 +91,33 @@ namespace FilmDatabase
                 tbRating.Text = Math.Round(selectedMovie.Rating, 2).ToString();
             }
         }
+        string sb = "";
         private void MIB_G(object sender, RoutedEventArgs e)
         {
 
+            sb = "g";
+            tbSb.IsEnabled = true;
+            tbSb.Text = "";
         }
         private void MIB_M(object sender, RoutedEventArgs e)
         {
 
+            sb = "m";
+            tbSb.IsEnabled = true;
+            tbSb.Text = "";
         }
         private void MIB_MA(object sender, RoutedEventArgs e)
         {
 
+            sb = "ma";
+            tbSb.IsEnabled = true;
+            tbSb.Text = "";
         }
         private void MIB_MD(object sender, RoutedEventArgs e)
         {
-
-        }
-        private void MIB_P(object sender, RoutedEventArgs e)
-        {
-
+            sb = "md";
+            tbSb.IsEnabled = true;
+            tbSb.Text = "";
         }
 
         private void Btn_New(object sender, RoutedEventArgs e)
@@ -140,6 +148,45 @@ namespace FilmDatabase
         private void BtnClose(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+
+        private void tbSb_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            switch (sb)
+            {
+                case "g":
+                    {
+                        var mf = tbSb.Text;
+                        var search = _context.genre.Where(m => m.GenreName.ToLower().IndexOf(mf) != -1).ToList();
+                        lbMovies.ItemsSource = search;
+                        break;
+                    }
+                case "m":
+                    {
+                        var mf = tbSb.Text;
+                        var search = _context.movie.Where(m => m.Title.ToLower().IndexOf(mf) != -1).ToList();
+                        lbMovies.ItemsSource = search;
+                        break;
+                    }
+                case "ma":
+                    {
+                        var mf = tbSb.Text;
+                        var search = _context.movie_actor
+                            .Where(m => m.Person.LastName.ToLower().IndexOf(mf) != -1 || m.Person.FirstName.ToLower().IndexOf(mf) != -1)
+                            .ToList();
+                        lbMovies.ItemsSource = search;
+                        break;
+                    }
+                case "md":
+                    {
+                        var mf = tbSb.Text;
+                        var search = _context.movie_director
+                            .Where(m => m.Person.LastName.ToLower().IndexOf(mf) != -1 || m.Person.FirstName.ToLower().IndexOf(mf) != -1)
+                            .ToList();
+                        lbMovies.ItemsSource = search;
+                        break;
+                    }
+            }
         }
     }
 }
