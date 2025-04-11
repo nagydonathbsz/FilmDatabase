@@ -20,7 +20,7 @@ namespace FilmDatabase.Models
         public string Nationality { get; set; }
         public DateTime BirthDate { get; set; }
 
-        public virtual ICollection<Movie_Actor> Movie_Actor { get; set; }
-        public virtual ICollection<Movie_Director> Movie_Director { get; set; }
+/*        public virtual ICollection<Movie_Actor> Movie_Actor { get; set; }
+        public virtual ICollection<Movie_Director> Movie_Director { get; set; }*/
     }
 }

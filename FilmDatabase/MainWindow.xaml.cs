@@ -152,27 +152,29 @@ namespace FilmDatabase
 
         private void tbSb_TextChanged(object sender, TextChangedEventArgs e)
         {
+            lbMovies.ItemsSource = "";
             switch (sb)
             {
                 case "g":
                     {
                         var mf = tbSb.Text;
-                        var search = _context.genre.Where(m => m.GenreName.ToLower().IndexOf(mf) != -1).ToList();
+                        var search = _context.movie.Where(m => m.Genre.GenreName.ToLower().IndexOf(mf) != -1).ToList();
                         lbMovies.ItemsSource = search;
                         break;
                     }
                 case "m":
                     {
                         var mf = tbSb.Text;
+                       
                         var search = _context.movie.Where(m => m.Title.ToLower().IndexOf(mf) != -1).ToList();
                         lbMovies.ItemsSource = search;
                         break;
                     }
-                case "ma":
+                /*case "ma":
                     {
                         var mf = tbSb.Text;
-                        var search = _context.movie_actor
-                            .Where(m => m.Person.LastName.ToLower().IndexOf(mf) != -1 || m.Person.FirstName.ToLower().IndexOf(mf) != -1)
+                        var search = _context.movie
+                            .Where(m => m.Movie_Actors.LastName.ToLower().IndexOf(mf) != -1 || m.Person.FirstName.ToLower().IndexOf(mf) != -1)
                             .ToList();
                         lbMovies.ItemsSource = search;
                         break;
@@ -185,7 +187,7 @@ namespace FilmDatabase
                             .ToList();
                         lbMovies.ItemsSource = search;
                         break;
-                    }
+                    }*/
             }
         }
     }

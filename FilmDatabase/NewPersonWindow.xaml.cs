@@ -27,12 +27,13 @@ namespace FilmDatabase
 
         private void Insert_Click(object sender, RoutedEventArgs e)
         {
-            try
-            {
+            
+            
                 using (var context = new FejlesztokozpontContext())
                 {
                     var person = new Person
                     {
+                        PersonID = context.people.Max(p => p.PersonID) + 1,
                         FirstName = txtFirstName.Text,
                         LastName = txtLastName.Text,
                         Nationality = txtNationality.Text,
@@ -43,11 +44,7 @@ namespace FilmDatabase
                     MessageBox.Show("Személy hozzáadva.");
                     this.Close();
                 }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Hiba történt: {ex.Message}");
-            }
+            
         }
     }
 }

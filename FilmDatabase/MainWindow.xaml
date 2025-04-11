@@ -45,7 +45,7 @@
                         <MenuItem x:Name="MIMA" Header="Movie_Actor" Click="MIB_MA" FontWeight="Light" Foreground="Black"/>
                         <MenuItem x:Name="MIMD" Header="Movie_Director" Click="MIB_MD" FontWeight="Light" Foreground="Black"/>
                     </MenuItem>
-                    <TextBox x:Name="tbSb" Width="150" IsEnabled="False"></TextBox>
+                    <TextBox x:Name="tbSb" Width="150" IsEnabled="False" TextChanged="tbSb_TextChanged"></TextBox>
                 </Menu>
             </Grid>
             <Grid Grid.Column="1">
