@@ -34,8 +34,8 @@ namespace FilmDatabase
             lbMovies.ItemsSource = movies;
 
             tbMax.Text = movies.OrderByDescending(m => m.Rating).First().Title.ToString();
-            var topGenre = _context.genre
-                .GroupBy(mg => mg.GenreID)
+            var topGenre = _context.movie
+                .GroupBy(m => m.Genre.GenreName)
                 .OrderByDescending(g => g.Count())
                 .Select(g => g.Key)
                 .FirstOrDefault();
