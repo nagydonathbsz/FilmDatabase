@@ -26,8 +26,8 @@ namespace FilmDatabase
 
         private void Delete_Click(object sender, RoutedEventArgs e)
         {
-            if (int.TryParse(txtPersonId.Text, out int id))
-            {
+            
+          
                 using (var context = new FejlesztokozpontContext())
                 {
                     var person = context.people.FirstOrDefault(p => p.PersonID == txtPersonId.Text);
@@ -40,7 +40,6 @@ namespace FilmDatabase
                     }
                     else MessageBox.Show("Személy nem található.");
                 }
-            }
         }
     }
 }

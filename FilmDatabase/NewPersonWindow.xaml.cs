@@ -27,24 +27,24 @@ namespace FilmDatabase
 
         private void Insert_Click(object sender, RoutedEventArgs e)
         {
-            
-            
-                using (var context = new FejlesztokozpontContext())
+            using (var context = new FejlesztokozpontContext())
+            {
+                var lastPerson = context.people.OrderByDescending(p => p.PersonID).FirstOrDefault();
+                var newPersonID = lastPerson != null ? "P0" + (int.Parse(lastPerson.PersonID.Substring(1)) + 1).ToString() : "1";
+
+                var person = new Person
                 {
-                    var person = new Person
-                    {
-                        PersonID = context.people.Max(p => p.PersonID) + 1,
-                        FirstName = txtFirstName.Text,
-                        LastName = txtLastName.Text,
-                        Nationality = txtNationality.Text,
-                        BirthDate = dpBirthDate.SelectedDate ?? DateTime.Now
-                    };
-                    context.people.Add(person);
-                    context.SaveChanges();
-                    MessageBox.Show("Személy hozzáadva.");
-                    this.Close();
-                }
-            
+                    PersonID = newPersonID,
+                    FirstName = txtFirstName.Text,
+                    LastName = txtLastName.Text,
+                    Nationality = txtNationality.Text,
+                    BirthDate = dpBirthDate.SelectedDate ?? DateTime.Now
+                };
+                context.people.Add(person);
+                context.SaveChanges();
+                MessageBox.Show("Személy hozzáadva.");
+                this.Close();
+            }
         }
     }
 }
